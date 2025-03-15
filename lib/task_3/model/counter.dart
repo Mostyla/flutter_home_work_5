@@ -2,6 +2,8 @@ import 'dart:async';
 
 class Counter {
   int _count;
+
+  // Правильно ли я понимаю, что если мы создаем контроллер и не указываем broadcast, то этот контроллер будет ожидать 1 подписчика, если указываем broadcast, то их может быть несколько, все верно?
   final _controller = StreamController<int>;
 
   Counter(this._count);
